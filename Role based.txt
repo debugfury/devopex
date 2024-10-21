@@ -1,0 +1,21 @@
+1. manage jenkins 
+2.plugins->role based authentication 
+3.click on manage and assign role
+4.under global roles role to add add dev
+5.click on users manage jenkins.click create user.
+6.add new user and ok
+7.assidgn role select dev for the new user
+8.login with new user
+optional
+9.launch freestyle project
+10.config it as your git hub
+11.under git add repo url
+12.admin credentials
+13.branch 
+14.execute windows hatch command
+15.enter command
+16.javac and java 
+17.set build time
+18.build triggers build periodically
+19.schedule *****
+build now
