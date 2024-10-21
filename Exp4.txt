@@ -1,0 +1,11 @@
+1.)manage jenkins
+2.)check for git.exe
+3.git plugin install ornot
+4.select tool under manage jenkins 
+5.check pat of git repo name default path to git
+6.go dashboard click new freestyle project 
+7.copy your github url
+8.under build steps
+execute windows batch command 
+cmd javac hello world.java
+Java hello world 9. build now
