@@ -32,3 +32,10 @@ pipeline {
 &whoami=pranit&filename=test.txt
 10.)after entering the project will be build successfully.
 11.)after that check the test.txt.
+12.)launch a freestyle project
+13.)user git repo
+14.)enter git Url
+15.)under branch to build specify branch
+16.)under build step execute window hatch command enter command.java and java
+17.)set build time by build periodically schedule *****
+18.)after 1min 1st hash build
