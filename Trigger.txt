@@ -1,0 +1,34 @@
+build authorization token root plugin
+
+1.)click on new item on admin dashboard and create pipeline project and name it trigger_project
+2.)under General select This project is parameterized ?
+3.)add 2 String parameter
+4.)give Name- whoami
+5.)give Name- filename
+6.)under Pipeline add script-
+pipeline {
+    agent any
+
+    stages {
+        stage('Author name') {
+            steps {
+                echo 'This job is executed by ${params.whoami}'
+            }
+        }
+        stage('Creating file') {
+            steps {
+                echo "filename ${params.filename}"
+                echo "Creating....."
+                bat "echo 'hello geeks'> ${params.filename}"
+                echo "file successfully created"
+            }
+        }
+    }
+}
+
+7.)Under builds remotely select:- Trigger builds remotely and under Authentication Token:-54321
+8.)under Available plugins:- check whether Build authorization Token Root is selected if not install.
+9.)now open this link in different browser:-http://localhost:8080/buildByToken/buildWithParameters?token=54321&job=trigger_build2
+&whoami=pranit&filename=test.txt
+10.)after entering the project will be build successfully.
+11.)after that check the test.txt.
